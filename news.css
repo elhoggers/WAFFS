@@ -1,0 +1,252 @@
+/* GLOBAL SETTINGS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts and Body */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #FFFEF3; /* Light yellow */
+  color: #1F271B; /* Black Olive */
+}
+
+/* Wrapper */
+#wrapper {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+/* Header */
+header {
+  background-color: #19647E; /* Paynes Gray */
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding drop shadow */
+  border-radius: 0 0 10px 10px; /* Rounded corners */
+}
+
+header h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-content {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center the items */
+}
+
+.header-content h1 {
+  margin: 0; /* Remove default margin */
+}
+
+.header-content img {
+  width: 200px; 
+  margin-left: 20px; /* Adjusted for smaller screens */
+}
+
+
+header h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #555;
+  position: relative;
+}
+
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: bottom;
+}
+
+nav ul li a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Navigation and Sidebar button hover effect */
+nav ul li a:hover, aside ul li a:hover {
+  background-color: #28AFB0; /* Verdigris */
+}
+
+/* Content and Sidebar Container */
+#content-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Content */
+main {
+  padding: 20px;
+  background-color: #fff;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding drop shadow */
+  border-radius: 10px; /* Rounded corners */
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+article h2 {
+  margin-bottom: 10px;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Sidebar */
+aside {
+  width: 20%;
+  padding: 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+aside h3 {
+  margin-bottom: 15px;
+}
+
+aside nav {
+  position: sticky;
+  top: 20px;
+  margin-top: 10px;
+}
+
+aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside ul li {
+  margin-bottom: 15px;
+  display: inline-block; /* Display links horizontally */
+}
+
+aside ul li a {
+  color: #333;
+  text-decoration: none;
+  display: block; /* Ensure links take full width */
+  padding: 15px 20px; /* Adjust padding for better spacing */
+  border-radius: 10px; /* Make boxes bigger */
+  background-color: #ddd; /* Change box background color */
+}
+
+aside ul li a:hover {
+  background-color: #ccc; /* Change box background color on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #EE964B; /* Sandy Brown */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Adding drop shadow */
+  border-radius: 10px 10px 0 0; /* Rounded corners */
+}
+
+footer a {
+  color: #19647E;
+}
+
+@media screen and (max-width: 800px) {
+  aside {
+    width: 100%;
+    margin-bottom: 20px; /* Add some space between the sidebar and main content */
+  }
+
+  aside nav {
+    margin-top: 0;
+  }
+
+  aside ul li {
+    margin-bottom: 10px; /* Decrease the margin for smaller screens */
+    display: block; /* Stack links vertically on smaller screens */
+  }
+
+  aside ul li a {
+    padding: 10px 15px; /* Adjust padding for smaller screens */
+  }
+
+  /* Style for Header Navigation on smaller screens */
+  nav ul {
+    text-align: left; /* Align links to the left */
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px; /* Adjust margin for spacing */
+  }
+
+  nav ul li:last-child {
+    margin-bottom: 0; /* Remove margin from last item */
+  }
+
+  nav ul li a {
+	color: #fff;
+    display: block; /* Ensure links take full width */
+    padding: 15px 20px; /* Adjust padding for better spacing */
+    border-radius: 10px; /* Make boxes bigger */
+    background-color: #555555; /* Change box background color */
+  }
+
+  nav ul li a:hover {
+    background-color: #28AFB0; /* Change box background color on hover */
+  }
+
+  /* Hide the ferret image on smaller screens */
+  .header-content img {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-content img {
+    margin-left: auto; /* Move image to the far right */
+  }
+}

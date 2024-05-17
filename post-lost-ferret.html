@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WAFFS - Report Lost or Found Ferret</title>
+    <link rel="icon" href="images/websitelog.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="createpost.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="header-content">
+				<h1>Western Australian Ferret and Ferreting Society</h1>
+				<img src="images/smoolferret.webp" alt="small-cute-ferret">
+			</div>
+        </header>
+        
+        <!-- NAVIGATION -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html" title="Community news and updates for ferrets">Community news</a></li>
+                <li><a href="events.html" title="upcoming events for ferrets">Events</a></li>
+                <li><a href="lost-and-found.html" title="Lost and found ferrets">Lost &amp; Found </a></li>
+                <li><a href="https://shop.waffs.org.au/" title="Store for ferrets products" target="_blank">Store</a></li>
+                <li><a href="q-and-a.html" title="questions and answers about ferrets">Q &amp; A</a></li>
+            </ul>
+        </nav>
+        
+        <!-- CONTENT CONTAINER -->
+        <div id="content-container">
+            <!-- CONTENT -->
+            <main>
+                <h2>Report Lost or Found Ferret</h2>
+                
+                <!-- Form for reporting lost or found ferrets -->
+                <form action="submit_lost_found.php" method="post" enctype="multipart/form-data">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="ferret_type">Ferret Status:</label>
+                    <select id="ferret_type" name="ferret_Status" required>
+                    <option value="lost">Lost</option>
+                    <option value="found">Found</option>
+                    </select><br><br>
+
+                    
+                    <label for="ferret_description">Description:</label><br>
+                    <!-- Watermark for description -->
+                    <div style="position:relative;">
+                        <textarea id="ferret_description" name="ferret_description" rows="4" cols="50" required></textarea>
+                    </div><br><br>
+                    
+                    <!-- Input for uploading images -->
+                    <label for="image">Upload Image:</label>
+                    <input type="file" id="image" name="image" accept="image/*"><br><br>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </main>
+        </div> <!-- End of content-container -->
+    </div> <!-- End of wrapper -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; WAFFS</p>        
+        <address>
+            Contact us at: <a href="mailto:WAFFScoms@gmail.com">WAFFS@gmail.com</a>
+        </address>
+    </footer>
+</body>
+</html>

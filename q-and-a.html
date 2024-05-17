@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WAFFS - Q&amp;A</title>
+    <link rel="icon" href="images/websitelog.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="qanda.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="header-content">
+				<h1>Western Australian Ferret and Ferreting Society</h1>
+				<img src="images/smoolferret.webp" alt="small-cute-ferret">
+			</div>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html" title="Community news and updates for ferrets">Community news</a></li>
+                <li><a href="events.html" title="upcoming events for ferrets">Events</a></li>
+                <li><a href="lost-and-found.html" title="Lost and found ferrets">Lost &amp; Found </a></li>
+                <li><a href="https://shop.waffs.org.au/" title="Store for ferrets products" target="_blank">Store</a></li>
+            </ul>
+        </nav>
+
+        <!-- CONTENT CONTAINER -->
+        <div id="content-container">
+            <!-- CONTENT -->
+            <main>
+                <section>
+                    <h2 id="questions-and-answers">Questions &amp; Answers</h2>
+                    <form id="search-form">
+                        <label for="search">Search:</label>
+                        <input type="text" id="search" name="search" placeholder="Search questions">
+                        <button type="submit">Search</button>
+                    </form>
+                    <article>
+                        <h3>How do I stop my ferret from digging up my houseplants?</h3>
+                        <p>Ferrets are naturally curious and playful creatures, and digging is a common behavior for them. To prevent your ferret from digging up your houseplants, you can try a few strategies. First, provide plenty of alternative digging opportunities, such as a sandbox filled with safe digging materials like rice or shredded paper. Additionally, you can try covering the soil of your houseplants with rocks or decorative pebbles to make digging less appealing. Finally, supervise your ferret closely when they are near your plants and redirect their attention to more appropriate activities if you catch them digging.</p>
+                        <form action="submit_response.php" method="post">
+                            <label for="response1"><i>Your Response</i></label><br>
+                            <textarea id="response1" name="response" rows="4" cols="50" required></textarea><br><br>
+                            <input type="submit" value="Submit Response">
+                        </form>
+                    </article>
+                    <article>
+                        <h3>Is it normal for my ferret to sleep so much during the day?</h3>
+                        <p>Yes, it's completely normal for ferrets to sleep for long periods during the day. Ferrets are crepuscular animals, meaning they are most active during dawn and dusk. As a result, they tend to sleep for several hours during the day and night. Providing a comfortable sleeping area with cozy bedding and dim lighting can help your ferret feel secure and encourage restful sleep. However, if you notice any sudden changes in your ferret's sleeping patterns or behavior, it's always a good idea to consult with a veterinarian to rule out any potential health issues.</p>
+                        <form action="submit_response.php" method="post">
+                            <label for="response2"><i>Your Response</i>:</label><br>
+                            <textarea id="response2" name="response" rows="4" cols="50" required></textarea><br><br>
+                            <input type="submit" value="Submit Response">
+                        </form>
+                    </article>
+                    <div id="question-form">
+                        <h3>Ask a Question</h3>
+                        <form action="submit_question.php" method="post">
+                            <label for="question"><i>Your Question</i>:</label><br>
+                            <textarea id="question" name="question" rows="4" cols="50" required></textarea><br><br>
+                            <input type="submit" value="Submit Question">
+                        </form>
+                    </div>
+                </section>
+            </main>
+
+            <!-- SIDEBAR -->
+            <aside>
+                <nav>
+                    <ul>
+                        <li><a href="#questions-and-answers">Back to top</a></li>
+                        <li><a href="#question-form">Ask a Question</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div> <!-- End of content-container -->
+    </div> <!-- End of wrapper -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; WAFFS</p>
+        <address>
+            Contact us at: <a href="mailto:WAFFScoms@gmail.com">WAFFS@gmail.com</a>
+        </address>
+    </footer>
+</body>
+
+</html>
