@@ -1,7 +1,5 @@
 /* GLOBAL SETTINGS */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap');
-
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +11,7 @@ body {
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 1.6;
   background-color: #FFFEF3;
-  color: #1F271B; /* Black Olive */
+  color: #1F271B; 
 }
 
 /* Wrapper */
@@ -25,26 +23,26 @@ body {
 
 /* Header */
 header {
-  background-color: #19647E; /* Paynes Gray */
+  background-color: #19647E; 
   color: #fff;
   padding: 20px;
   width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding drop shadow */
-  border-radius: 0 0 10px 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 0 0 10px 10px; 
 }
 
 .header-content {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Vertically center the items */
+  display: flex; 
+  align-items: center; 
 }
 
 .header-content h1 {
-  margin: 0; /* Remove default margin */
+  margin: 0; 
 }
 
 .header-content img {
   width: 200px; 
-  margin-left: 20px; /* Adjusted for smaller screens */
+  margin-left: 20px; 
 }
 
 
@@ -99,7 +97,7 @@ nav ul li a:hover::before {
 
 /* Navigation and Sidebar button hover effect */
 nav ul li a:hover, aside ul li a:hover {
-  background-color: #28AFB0; /* Verdigris */
+  background-color: #28AFB0; 
 }
 
 /* Content and Sidebar Container */
@@ -114,11 +112,11 @@ main {
   padding: 20px;
   background-color: #fff;
   flex: 1;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding drop shadow */
-  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px; 
   width: 75%;
   min-width: 300px;
-  margin: 0 auto; /* Center the content horizontally */
+  margin: 0 auto; 
 }
 
 article {
@@ -161,32 +159,32 @@ aside ul {
 }
 
 aside ul li {
-  margin-bottom: 15px; /* Adjusted margin to provide space between buttons and other elements */
-  display: inline-block; /* Display links horizontally */
+  margin-bottom: 15px; 
+  display: inline-block; 
 }
 
 aside ul li a {
   color: #333;
   text-decoration: none;
-  display: block; /* Ensure links take full width */
-  padding: 15px 20px; /* Adjust padding for better spacing */
-  border-radius: 10px; /* Make boxes bigger */
-  background-color: #ddd; /* Change box background color */
+  display: block; 
+  padding: 15px 20px; 
+  border-radius: 10px; 
+  background-color: #ddd; 
 }
 
 aside ul li a:hover {
-  background-color: #ccc; /* Change box background color on hover */
+  background-color: #ccc; 
 }
 
 /* Footer */
 footer {
-  background-color: #EE964B; /* Sandy Brown */
+  background-color: #EE964B; 
   color: #fff;
   padding: 20px;
   text-align: center;
   width: 100%;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Adding drop shadow */
-  border-radius: 10px 10px 0 0; /* Rounded corners */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px 10px 0 0; 
 }
 
 footer a {
@@ -204,7 +202,7 @@ footer a {
 @media screen and (max-width: 800px) {
   aside {
     width: 100%;
-    margin-bottom: 20px; /* Add some space between the sidebar and main content */
+    margin-bottom: 20px; 
   }
 
   aside nav {
@@ -212,47 +210,46 @@ footer a {
   }
 
   aside ul li {
-    margin-bottom: 10px; /* Decrease the margin for smaller screens */
-    display: block; /* Stack links vertically on smaller screens */
+    margin-bottom: 10px; 
+    display: block; 
   }
 
   aside ul li a {
-    padding: 10px 15px; /* Adjust padding for smaller screens */
+    padding: 10px 15px; 
   }
 
   /* Style for Header Navigation on smaller screens */
   nav ul {
-    text-align: left; /* Align links to the left */
+    text-align: left; 
   }
 
   nav ul li {
     display: block;
-    margin-bottom: 10px; /* Adjust margin for spacing */
+    margin-bottom: 10px; 
   }
 
   nav ul li:last-child {
-    margin-bottom: 0; /* Remove margin from last item */
+    margin-bottom: 0; 
   }
 
   nav ul li a {
 	color: #fff;
-    display: block; /* Ensure links take full width */
-    padding: 15px 20px; /* Adjust padding for better spacing */
-    border-radius: 10px; /* Make boxes bigger */
-    background-color: #555555; /* Change box background color */
+    display: block; 
+    padding: 15px 20px; 
+    border-radius: 10px; 
+    background-color: #555555; 
   }
 
   nav ul li a:hover {
-    background-color: #28AFB0; /* Change box background color on hover */
+    background-color: #28AFB0; 
   }
 
-  /* Hide the ferret image on smaller screens */
   .header-content img {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-content img {
-    margin-left: auto; /* Move image to the far right */
+    margin-left: auto; 
   }
 }

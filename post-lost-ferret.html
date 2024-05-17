@@ -33,7 +33,7 @@
             <main>
                 <h2>Report Lost or Found Ferret</h2>
                 
-                <!-- Form for reporting lost or found ferrets -->
+                <!-- Form for reporting lost or found ferrets, again with this page Im unsure how people make code to allow people to post ect, I figure its a lot of backend work, I couldnt get it working obviously, I dont have the time or i think money to create a fully functional posting section to the site where people can securly sign up ect -->
                 <form action="submit_lost_found.php" method="post" enctype="multipart/form-data">
                     <label for="name">Your Name:</label>
                     <input type="text" id="name" name="name" required><br><br>
@@ -46,10 +46,8 @@
                     <option value="lost">Lost</option>
                     <option value="found">Found</option>
                     </select><br><br>
-
                     
                     <label for="ferret_description">Description:</label><br>
-                    <!-- Watermark for description -->
                     <div style="position:relative;">
                         <textarea id="ferret_description" name="ferret_description" rows="4" cols="50" required></textarea>
                     </div><br><br>

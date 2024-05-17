@@ -1,7 +1,5 @@
 /* GLOBAL SETTINGS */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap');
-
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +10,7 @@
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #FFFEF3; /* Light yellow */
-    color: #1F271B; /* Black Olive */
+    background-color: #FFFEF3; 
 }
 
 /* Wrapper */
@@ -25,26 +22,26 @@ body {
 
 /* Header */
 header {
-    background-color: #19647E; /* Paynes Gray */
+    background-color: #19647E; 
     color: #fff;
     padding: 20px;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding drop shadow */
-    border-radius: 0 0 10px 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 0 0 10px 10px; 
 }
 
 .header-content {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Vertically center the items */
+  display: flex; 
+  align-items: center; 
 }
 
 .header-content h1 {
-  margin: 0; /* Remove default margin */
+  margin: 0; 
 }
 
 .header-content img {
   width: 200px; 
-  margin-left: 20px; /* Adjusted for smaller screens */
+  margin-left: 20px; 
 }
 
 
@@ -100,7 +97,7 @@ nav ul li a:hover::before {
 /* Navigation and Sidebar button hover effect */
 nav ul li a:hover,
 aside ul li a:hover {
-    background-color: #28AFB0; /* Verdigris */
+    background-color: #28AFB0; 
 }
 
 /* Content */
@@ -109,8 +106,8 @@ main {
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding drop shadow */
-    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
 }
 
 .column {
@@ -186,7 +183,7 @@ aside ul li a:hover {
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
-    background-color: #EE964B; /* Verdigris */
+    background-color: #EE964B; 
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -200,7 +197,7 @@ aside ul li a:hover {
 }
 
 .report-button:hover {
-    background-color: #D26B13; /* Darker shade of Verdigris */
+    background-color: #D26B13; 
 }
 
 /* New styles for buttons */
@@ -221,13 +218,13 @@ aside button:hover {
 
 /* Footer */
 footer {
-    background-color: #EE964B; /* Sandy Brown */
+    background-color: #EE964B; 
     color: #fff;
     padding: 20px;
     text-align: center;
-    width: 100%; /* This property allows the footer to span the full width of the page */
-	box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Adding drop shadow */
-    border-radius: 10px 10px 0 0; /* Rounded corners */
+    width: 100%; 
+	box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px 10px 0 0; 
 }
 
 footer a {
@@ -251,10 +248,10 @@ footer a {
 
     nav ul li a {
 	color: #fff;
-    display: block; /* Ensure links take full width */
-    padding: 15px 20px; /* Adjust padding for better spacing */
-    border-radius: 10px; /* Make boxes bigger */
-    background-color: #555555; /* Change box background color */
+    display: block; 
+    padding: 15px 20px; 
+    border-radius: 10px; 
+    background-color: #555555; 
     }
 
     nav ul li a:hover {
@@ -265,7 +262,6 @@ footer a {
         flex: 1 100%;
     }
 	
-	  /* Hide the ferret image on smaller screens */
   .header-content img {
     display: none;
   }
@@ -273,6 +269,6 @@ footer a {
 
 @media screen and (min-width: 1200px) {
   .header-content img {
-    margin-left: auto; /* Move image to the far right */
+    margin-left: auto; 
   }
 }
